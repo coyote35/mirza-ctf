@@ -10,6 +10,9 @@ var crypto = require('crypto');
 
 
 var bodyParser = require("body-parser");
+
+var path = require('path');
+
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', function (req, res) {
