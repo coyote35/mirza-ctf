@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>DSI Mirza CTF - 2020</title>
+    <style>
+    .container {
+      width: 500px;
+      clear: both;
+    }
+    .container input {
+      width: 100%;
+    clear: both;
+}
+    </style>
+</head>
+<body>
+    <h2>Bonjour Scarabé.e! </h2>
+    <p>Heureux de vous voir ici... </p>
+    <p>Vous avez avancé sur votre enquête?</p>
+       
+    <p> Vous pouvez soumettre ici vos conclusions:</p>
+    <ul>
+      <li>
+        Le nom de la commune doit être saisi avec la première en majuscule, le reste en minuscule (ex: "Rennes")</li>
+      <li>  Le code postal sur 5 chiffres (ex: "35000")</li>
+    </ul>
+    <br>
+    <div class="container">
+    <form action="/submit-student-data" method="post">
+        <label>Commune:</label> 
+        <input name="town" type="text"/> <br />
+        <label>Code postal:</label>
+        <input name="zipcode" type="text"/> <br />
+         <label>&nbsp</label>
+        <input type="submit" value="Tenter votre chance" />
+    </form>
+    </div>
+</body>
+</html>
