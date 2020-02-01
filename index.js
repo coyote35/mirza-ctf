@@ -34,7 +34,7 @@ app.post('/submit-student-data', function (req, res) {
     
 });
 
-var server = app.listen(5000, function () {
+var server = app.listen(8080, function () {
     console.log('Node server is running..');
 });
 
