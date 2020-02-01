@@ -1,5 +1,10 @@
 {
   "testRegex": "unit_tests.js",
   "testEnvironment": "node",
-  "hash": "ed9591fc90463961409e357d554882f46834ec8bd34893fe157e96788a7e3e1e"
+  "hash": "ed9591fc90463961409e357d554882f46834ec8bd34893fe157e96788a7e3e1e", 
+  "main" : "index.js",
+  "scripts" : {
+    "start" : "node index.js"
+  }
+  
 }
