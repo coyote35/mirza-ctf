@@ -16,7 +16,8 @@ var path = require('path');
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', function (req, res) {
-    res.sendFile( path.join(__dirname + "/" + "index.html"));
+    //res.sendFile( path.join(__dirname + "/" + "index.html"));
+    res.send('Tentative de hacking. Votre ip a été transmise...');
 });
 
 app.get('/*', function (req, res) {
