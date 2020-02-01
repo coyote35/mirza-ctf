@@ -13,7 +13,7 @@ var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', function (req, res) {
-    res.sendFile( __dirname + "/" + "index.html" );
+    res.sendFile( path.join(__dirname + "/" + "index.html"));
 });
 
 app.get('/*', function (req, res) {
